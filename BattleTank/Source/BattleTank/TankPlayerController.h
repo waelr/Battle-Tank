@@ -17,11 +17,14 @@ class BATTLETANK_API ATankPlayerController : public APlayerController
 	
 public :
 	
-	// Get Currently Possess pawn by this controller
-	ATank* GetControlledTank() const;
-
 	// override BeginPlay() of AAcotor.
 	void BeginPlay() override;
+	
+private :
+
+// Get Currently Possess pawn by this controller
+	ATank* GetControlledTank() const;
+ 
 
 	
 	
