@@ -16,6 +16,8 @@ class BATTLETANK_API ATankPlayerController : public APlayerController
 	GENERATED_BODY()
 	
 public :
+	
+	// Get Currently Possess pawn by this controller
 	ATank* GetControlledTank() const;
 
 	// override BeginPlay() of AAcotor.
