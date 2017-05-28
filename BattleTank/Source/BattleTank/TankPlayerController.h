@@ -19,13 +19,16 @@ public :
 	
 	// override BeginPlay() of AAcotor.
 	void BeginPlay() override;
-	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
 private :
 
 // Get Currently Possess pawn by this controller
 	ATank* GetControlledTank() const;
- 
-
+// Start moving the barrel so that the shot 
+// hit where the crosshair point instersect the world. 
+	void AimTowardCrosshair();
 	
 	
 	
